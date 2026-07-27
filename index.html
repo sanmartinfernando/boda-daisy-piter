@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daisy & Piter · Bodas de Perla</title>
-  <meta property="og:title" content="Daisy & Piter · Bodas de Perla">
+  <title>Daisy & Jhon · Bodas de Perla</title>
+  <meta property="og:title" content="Daisy & Jhon · Bodas de Perla">
   <meta property="og:description" content="30 años celebrando el mismo amor. ¡Acompáñanos a renovar nuestros votos!">
   <meta property="og:image" content="https://sanmartinfernando.github.io/boda-daisy-piter/foto3.jpeg">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Daisy & Piter · Bodas de Perla">
+  <meta name="twitter:title" content="Daisy & Jhon · Bodas de Perla">
   <meta name="twitter:description" content="30 años celebrando el mismo amor. ¡Acompáñanos a renovar nuestros votos!">
   <meta name="twitter:image" content="https://sanmartinfernando.github.io/boda-daisy-piter/foto3.jpeg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -556,6 +556,91 @@
       color: #c9b8a2;
     }
 
+    /* ---------- SECTION 5 : REGALO / DETALLE ---------- */
+    .gift-box {
+      max-width: 500px;
+      margin: 45px auto 0;
+      padding: 30px 24px;
+      border: 1px dashed rgba(199, 167, 106, 0.4);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.03);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .gift-box .gift-icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+      display: inline-block;
+    }
+
+    .gift-box p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #ede2d2;
+      margin-bottom: 20px;
+    }
+
+    .gift-box .iban-container {
+      background: rgba(0, 0, 0, 0.2);
+      padding: 14px;
+      border-radius: 8px;
+      margin-bottom: 14px;
+      border: 1px solid rgba(199, 167, 106, 0.2);
+    }
+
+    .gift-box .iban-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gold);
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+
+    .gift-box .iban-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .gift-box .iban-number {
+      font-family: monospace;
+      font-size: 1.05rem;
+      letter-spacing: 0.05em;
+      color: #fff;
+      font-weight: 500;
+    }
+
+    .gift-box .copy-btn {
+      background: var(--gold);
+      color: #2c1c15;
+      border: none;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .gift-box .copy-btn:hover {
+      background: #dfbc7a;
+      transform: translateY(-1px);
+    }
+
+    .gift-box .account-holder {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      font-style: italic;
+      color: #f3e7d4;
+      margin-top: 10px;
+    }
+
     footer {
       background: #2c1c15;
       color: #c9b8a2;
@@ -595,7 +680,7 @@
     <div class="envelope-scene" id="envelopeScene">
       <div class="env-body">
         <div class="env-letter">
-          <p>Daisy &amp; Piter<br>te invitan a celebrar<br>sus Bodas de Perla</p>
+          <p>Daisy &amp; Jhon<br>te invitan a celebrar<br>sus Bodas de Perla</p>
         </div>
         <div class="env-front"></div>
         <div class="env-flap"></div>
@@ -619,7 +704,7 @@
       <div class="hero-text reveal">
         <h1 class="hero-title-primary">
           Bodas de Perla
-          <span class="names-span">de Daisy <span class="amp">&amp;</span> Piter</span>
+          <span class="names-span">de Daisy <span class="amp">&amp;</span> Jhon</span>
         </h1>
         <p class="hero-sub"><span class="underlined-text">30 años celebrando el mismo amor y renovando nuestra
             promesa.</span></p>
@@ -715,10 +800,29 @@
         💬 Confirmar por WhatsApp
       </a>
       <div class="note">+34 722 69 36 39</div>
+
+      <!-- Regalo / Detalle Bancario -->
+      <div class="gift-box">
+        <span class="gift-icon">💝</span>
+        <p>El mejor regalo es compartir este día con vosotros. Si además deseáis tener un detalle con nosotros, podéis
+          hacerlo mediante la siguiente cuenta bancaria:</p>
+
+        <div class="iban-container">
+          <div class="iban-label">IBAN</div>
+          <div class="iban-row">
+            <span class="iban-number">ES15 2100 1661 8001 0034 8010</span>
+            <button class="copy-btn" onclick="copyIban()">
+              📋 Copiar IBAN
+            </button>
+          </div>
+        </div>
+
+        <div class="account-holder">Jhon Gerardo Sarango Rodríguez</div>
+      </div>
     </div>
   </section>
 
-  <footer>Daisy &amp; Piter · 30 años de amor · Bodas de Perla</footer>
+  <footer>Daisy &amp; Jhon · 30 años de amor · Bodas de Perla</footer>
 
   <script>
     // Envelope open interaction
@@ -743,6 +847,25 @@
       });
     }, { threshold: 0.18 });
     revealEls.forEach(el => io.observe(el));
+
+    // Copy IBAN to clipboard
+    function copyIban() {
+      const iban = "ES15 2100 1661 8001 0034 8010";
+      navigator.clipboard.writeText(iban).then(() => {
+        const btn = document.querySelector('.copy-btn');
+        const origText = btn.innerHTML;
+        btn.innerHTML = "✓ Copiado";
+        btn.style.background = "#c7a76a";
+        btn.style.color = "#2c1c15";
+        setTimeout(() => {
+          btn.innerHTML = origText;
+          btn.style.background = "";
+          btn.style.color = "";
+        }, 2000);
+      }).catch(err => {
+        console.error('Error al copiar el IBAN: ', err);
+      });
+    }
   </script>
 </body>
 
